@@ -17,7 +17,6 @@
                     "tipo_componente": "select",
                     "obligatorio": true,
                     "regla": "PENDIENTE",
-
                     "id_catalogo": 1,
                     "valores": [
                         {
@@ -31,57 +30,7 @@
                     ]
 
                 },
-                {
-                    "id_campo": 18,
-                    "nombre_campo": "id_tipo_cartera",
-                    "etiqueta": "Tipo Cartera",
-                    "tipo_dato": "string",
-                    "tipo_componente": "select",
-                    "obligatorio": true,
-                    "regla": "PENDIENTE",
-
-                    "id_catalogo": 2,
-                    "valores": [
-                        {
-                            id_valor: 1,
-                            descripcion: "Cartera CNFS 2013"
-                        },
-                        {
-                            id_valor: 1,
-                            descripcion: "Cartera CNFS 2013"
-                        }
-                    ]
-
-                },
-                {
-                    "id_campo": 19,
-                    "nombre_campo": "guardar_cotizacion",
-                    "etiqueta": "Guardar Cotización",
-                    "tipo_dato": "string",
-                    "tipo_componente": "select",
-                    "obligatorio": true,
-                    "regla": "PENDIENTE",
-
-                    "id_catalogo": 3,
-                    "valores": [
-                        {
-                            id_valor: 1,
-                            descripcion: "Por número"
-                        }
-                    ]
-
-                },
-                {
-                    "id_campo": 20,
-                    "nombre_campo": "clave_agente",
-                    "etiqueta": "Clave del Agente",
-                    "tipo_dato": "string",
-                    "tipo_componente": "input",
-                    "regla": "PENDIENTE",
-                    "longitud": 15,
-                    "obligatorio": true
-                },
-                {
+               {
                     "id_campo": 21,
                     "nombre_campo": "nombre_agente",
                     "etiqueta": "Nombre del Agente",
@@ -131,16 +80,6 @@
                     "regla": "PENDIENTE"
                 },
                 {
-                    "id_campo": 3,
-                    "etiqueta": "Apellido Materno",
-                    "obligatorio": false,
-                    "nombre_campo": "ape_materno",
-                    "tipo_dato": "string",
-                    "tipo_componente": "input",
-                    "longitud": 50,
-                    "regla": "PENDIENTE"
-                },
-                {
                     "id_campo": 4,
                     "etiqueta": "Edad",
                     "obligatorio": true,
@@ -172,26 +111,6 @@
                     "tipo_dato": "date",
                     "tipo_componente": "calendar",
                     "regla": "PENDIENTE"
-                },
-                {
-                    "id_campo": 7,
-                    "etiqueta": "Sexo",
-                    "obligatorio": true,
-                    "nombre_campo": "sexo",
-                    "tipo_dato": "string",
-                    "tipo_componente": "radio",
-                    "longitud": 5,
-                    "regla": "PENDIENTE",
-                    "valores": [
-                        {
-                            id_valor: "M",
-                            descripcion: "Masculino"
-                        }, {
-                            id_valor: "F",
-                            descripcion: "Femenino"
-                        }
-                    ]
-
                 },
                 {
                     "id_campo": 8,
@@ -312,42 +231,6 @@
                     "tipo_dato": "string",
                     "tipo_componente": "input",
                     "longitud": 50,
-                    "regla": "PENDIENTE"
-                },
-                {
-                    "id_campo": 3,
-                    "etiqueta": "Apellido Materno",
-                    "obligatorio": false,
-                    "nombre_campo": "ape_materno",
-                    "tipo_dato": "string",
-                    "tipo_componente": "input",
-                    "longitud": 50,
-                    "regla": "PENDIENTE"
-                },
-                {
-                    "id_campo": 4,
-                    "etiqueta": "Edad",
-                    "obligatorio": true,
-                    "nombre_campo": "edad",
-                    "tipo_dato": "number",
-                    "maximo": 99,
-                    "minimo": 1,
-                    "tipo_componente": "input",
-                    "longitud": 2,
-                    "regla": "PENDIENTE",
-                    "rango": [
-                        0,
-                        100
-                    ]
-                },
-                {
-                    "id_campo": 5,
-                    "etiqueta": "Codigo Postal",
-                    "obligatorio": true,
-                    "nombre_campo": "cp",
-                    "tipo_dato": "string",
-                    "tipo_componente": "input",
-                    "longitud": 5,
                     "regla": "PENDIENTE"
                 },
                 {
