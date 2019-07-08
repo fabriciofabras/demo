@@ -1,0 +1,385 @@
+{
+    "id_aplicacion": 1,
+    "nombre": "Salud a tu Medida",
+    "descripcion": "Cotizador para Agentes",
+    "cantidad_asegurados": 10,
+    "estatus": "Activo",
+    "secciones": [
+        {
+            "id_seccion": 1,
+            "seccion": "Cotizador",
+            "campos": [
+                {
+                    "id_campo": 17,
+                    "nombre_campo": "id_negocio_operable",
+                    "etiqueta": "Negocio Operable",
+                    "tipo_dato": "string",
+                    "tipo_componente": "select",
+                    "obligatorio": true,
+                    "regla": "PENDIENTE",
+
+                    "id_catalogo": 1,
+                    "valores": [
+                        {
+                            id_valor: 1,
+                            descripcion: "Palacio de Hierro"
+                        },
+                        {
+                            id_valor: 2,
+                            descripcion: "Decide"
+                        }
+                    ]
+
+                },
+                {
+                    "id_campo": 18,
+                    "nombre_campo": "id_tipo_cartera",
+                    "etiqueta": "Tipo Cartera",
+                    "tipo_dato": "string",
+                    "tipo_componente": "select",
+                    "obligatorio": true,
+                    "regla": "PENDIENTE",
+
+                    "id_catalogo": 2,
+                    "valores": [
+                        {
+                            id_valor: 1,
+                            descripcion: "Cartera CNFS 2013"
+                        },
+                        {
+                            id_valor: 1,
+                            descripcion: "Cartera CNFS 2013"
+                        }
+                    ]
+
+                },
+                {
+                    "id_campo": 19,
+                    "nombre_campo": "guardar_cotizacion",
+                    "etiqueta": "Guardar Cotización",
+                    "tipo_dato": "string",
+                    "tipo_componente": "select",
+                    "obligatorio": true,
+                    "regla": "PENDIENTE",
+
+                    "id_catalogo": 3,
+                    "valores": [
+                        {
+                            id_valor: 1,
+                            descripcion: "Por número"
+                        }
+                    ]
+
+                },
+                {
+                    "id_campo": 20,
+                    "nombre_campo": "clave_agente",
+                    "etiqueta": "Clave del Agente",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "regla": "PENDIENTE",
+                    "longitud": 15,
+                    "obligatorio": true
+                },
+                {
+                    "id_campo": 21,
+                    "nombre_campo": "nombre_agente",
+                    "etiqueta": "Nombre del Agente",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "regla": "PENDIENTE",
+                    "longitud": 200,
+                    "obligatorio": true
+                },
+                {
+                    "id_campo": 22,
+                    "nombre_campo": "rango_edad",
+                    "etiqueta": "Rango Edad",
+                    "tipo_dato": "number",
+                    "tipo_componente": "input",
+                    "regla": "PENDIENTE",
+                    "rango": [
+                        0,
+                        100
+                    ],
+                    "obligatorio": true
+                }
+            ]
+        },
+        {
+            "id_seccion": 2,
+            "seccion": "Datos Generales",
+            "campos": [
+                {
+                    "id_campo": 1,
+                    "etiqueta": "Nombre",
+                    "obligatorio": true,
+                    "nombre_campo": "nombre",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "longitud": 50,
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 2,
+                    "etiqueta": "Apellido Paterno",
+                    "obligatorio": true,
+                    "nombre_campo": "ape_paterno",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "longitud": 50,
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 3,
+                    "etiqueta": "Apellido Materno",
+                    "obligatorio": false,
+                    "nombre_campo": "ape_materno",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "longitud": 50,
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 4,
+                    "etiqueta": "Edad",
+                    "obligatorio": true,
+                    "nombre_campo": "edad",
+                    "tipo_dato": "number",
+                    "tipo_componente": "input",
+                    "longitud": 2,
+                    "regla": "PENDIENTE",
+                    "rango": [
+                        0,
+                        100
+                    ],
+                },
+                {
+                    "id_campo": 5,
+                    "etiqueta": "Codigo Postal",
+                    "obligatorio": true,
+                    "nombre_campo": "cp",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "longitud": 5,
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 6,
+                    "etiqueta": "Antiguadad GNP",
+                    "obligatorio": true,
+                    "nombre_campo": "antiguedad_gnp",
+                    "tipo_dato": "date",
+                    "tipo_componente": "calendar",
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 7,
+                    "etiqueta": "Sexo",
+                    "obligatorio": true,
+                    "nombre_campo": "sexo",
+                    "tipo_dato": "string",
+                    "tipo_componente": "radio",
+                    "longitud": 5,
+                    "regla": "PENDIENTE",
+                    "valores": [
+                        {
+                            id_valor: "M",
+                            descripcion: "Masculino"
+                        }, {
+                            id_valor: "F",
+                            descripcion: "Femenino"
+                        }
+                    ]
+
+                },
+                {
+                    "id_campo": 8,
+                    "etiqueta": "Riesgo Selecto",
+                    "obligatorio": true,
+                    "nombre_campo": "riesgo_selecto",
+                    "tipo_dato": "boolean",
+                    "tipo_componente": "check",
+                    "regla": "PENDIENTE",
+                    "valores": [
+                        {
+                            id_valor:'1',
+                            descripcion:'Si'
+                        },
+                        {
+                            id_valor:'2',
+                            descripcion:'No'
+                        }
+                    ]
+                },
+                {
+                    "id_campo": 9,
+                    "etiqueta": "Garantia Coaseguro",
+                    "obligatorio": true,
+                    "nombre_campo": "garantia_coaseguro",
+                    "tipo_dato": "boolean",
+                    "tipo_componente": "check",
+                    "regla": "PENDIENTE",
+                    "valores": [
+                        {
+                            id_valor:'1',
+                            descripcion:'Si'
+                        },
+                        {
+                            id_valor:'2',
+                            descripcion:'No'
+                        }
+                    ]
+                },
+                {
+                    "id_campo": 11,
+                    "etiqueta": "Contratante Diferente al titular",
+                    "obligatorio": false,
+                    "nombre_campo": "contratante_diferente",
+                    "tipo_dato": "boolean",
+                    "tipo_componente": "check",
+                    "regla": "PENDIENTE",
+                    "valores": [
+                        {
+                            id_valor:'1',
+                            descripcion:'Si'
+                        },
+                        {
+                            id_valor:'2',
+                            descripcion:'No'
+                        }
+                    ]
+                },
+                {
+                    "id_campo": 12,
+                    "etiqueta": "Parentesco con titular",
+                    "obligatorio": false,
+                    "nombre_campo": "parentesco",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "longitud": 9,
+                    "regla": "PENDIENTE",
+                },
+                {
+                    "id_campo": 13,
+                    "etiqueta": "Fecha Nacimiento",
+                    "obligatorio": false,
+                    "nombre_campo": "fecha_nacimiento",
+                    "tipo_dato": "date",
+                    "tipo_componente": "calendar",
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 16,
+                    "etiqueta": "Contratante Pagador",
+                    "obligatorio": false,
+                    "nombre_campo": "contratante_pagador",
+                    "tipo_dato": "boolean",
+                    "tipo_componente": "check",
+                    "regla": "PENDIENTE",
+                    "valores": [
+                        {
+                            id_valor:'1',
+                            descripcion:'Si'
+                        },
+                        {
+                            id_valor:'2',
+                            descripcion:'No'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id_seccion": 3,
+            "seccion": "Asegurados",
+            "campos": [
+                {
+                    "id_campo": 1,
+                    "etiqueta": "Nombre",
+                    "obligatorio": true,
+                    "nombre_campo": "nombre",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "longitud": 50,
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 2,
+                    "etiqueta": "Apellido Paterno",
+                    "obligatorio": true,
+                    "nombre_campo": "ape_paterno",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "longitud": 50,
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 3,
+                    "etiqueta": "Apellido Materno",
+                    "obligatorio": false,
+                    "nombre_campo": "ape_materno",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "longitud": 50,
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 4,
+                    "etiqueta": "Edad",
+                    "obligatorio": true,
+                    "nombre_campo": "edad",
+                    "tipo_dato": "number",
+                    "maximo": 99,
+                    "minimo": 1,
+                    "tipo_componente": "input",
+                    "longitud": 2,
+                    "regla": "PENDIENTE",
+                    "rango": [
+                        0,
+                        100
+                    ]
+                },
+                {
+                    "id_campo": 5,
+                    "etiqueta": "Codigo Postal",
+                    "obligatorio": true,
+                    "nombre_campo": "cp",
+                    "tipo_dato": "string",
+                    "tipo_componente": "input",
+                    "longitud": 5,
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 6,
+                    "etiqueta": "Antiguadad GNP",
+                    "obligatorio": true,
+                    "nombre_campo": "antiguedad_gnp",
+                    "tipo_dato": "date",
+                    "tipo_componente": "calendar",
+                    "regla": "PENDIENTE"
+                },
+                {
+                    "id_campo": 7,
+                    "etiqueta": "Sexo",
+                    "obligatorio": true,
+                    "nombre_campo": "sexo",
+                    "tipo_dato": "string",
+                    "tipo_componente": "radio",
+                    "longitud": 5,
+                    "regla": "PENDIENTE",
+                    "valores": [
+                        {
+                            id_valor: "M",
+                            descripcion: "Masculino"
+                        }, {
+                            id_valor: "F",
+                            descripcion: "Femenino"
+                        }
+                    ]
+
+                }
+            ]
+        }
+    ]
+}
